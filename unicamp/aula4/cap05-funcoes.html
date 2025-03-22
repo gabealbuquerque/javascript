@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body onload="aviso()">
+    <h1>Página para ser impressa</h1>
+    <p>Ao clicar no botão, esta página será enviada para o seu dispositivo padrão de impressão</p>
+    <button onclick="imprimir()">clique aqui para imprimir</button>
+    <p>Ao clicar no botão, você receberá uma mensagem exlusiva!</p>
+    <button onclick="msgExclusiva()">clique aqui para ver!</button>
+    <script>
+        function aviso() {
+            alert("Está é uma janela de aviso!");
+        }
+        function imprimir() {
+            window.print();
+        }
+        function msgExclusiva() {
+            alert("Bom dia!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 9) Para transferências de veículos num determinado estado, o DETRAN cobra uma taxa de
+2,5% sobre o valor de tabela do carro para carros fabricados antes de 2010, e uma taxa de
+3,5% para os fabricados a partir de 2010. Faça o código de um programa que lê o ano e o
+preço do carro e em seguida calcula e imprime a taxa a ser paga. -->
+    <script>
+        var ano = prompt('Digite o ano do seu carro: ')
+        var valor = prompt('Digite o valor do carro: R$ ')
+        if (ano < 2010 ){ 
+            var taxa = valor * (2.5 / 100)
+        }
+        else {
+            var taxa = valor * (3.5 / 100)
+        }
+        alert (`A taxa para um carro do ano de ${ano} e valor de R$ ${valor}.00 é de R$ ${taxa}.00`)
+    </script>
+</body>
+</html>
+

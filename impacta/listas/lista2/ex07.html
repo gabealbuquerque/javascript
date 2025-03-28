@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07</title>
+</head>
+<body>
+    <!--  7) Faça o código de um programa que receba um ano (quatro dígitos) e informe se é um ano
+bissexto ou não. Pesquise quais as regras para um ano ser bissexto. -->
+    <script>
+        var ano = prompt('Digite um ano: ')
+        if (ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0) {
+            alert(`O ano ${ano} é bissexto!`)
+        }
+        else {
+            alert(`O ano ${ano} não é bissexto!`)
+        }
+    </script>
+</body>
+</html>
+

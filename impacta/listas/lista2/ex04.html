@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex04</title>
+</head>
+<body>
+    <!-- 4) Um pescador comprou um computador para controlar o rendimento diário de seu
+trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo
+regulamento de pesca do Estado de São Paulo (50 kg), deve pagar uma multa de R$ 4,00
+por quilo excedente. Elabore o código de um programa que leia o peso de peixes, e
+verifique se há excesso. Se houver excesso, exiba o peso excedente e o valor da multa,
+caso contrário, exiba &#39;dentro do regulamento&#39;.  -->
+    <script>
+        var peso = prompt('Digite o peso: (kg) ')
+        if (peso > 50) {
+            var excedente = peso - 50
+            var multa = 4 * excedente
+            alert(`fora do regulamento. O peso excedeu ${excedente} kg e a multa será no valor de  R$ ${multa}.00`)
+        }
+        else {
+            alert('dentro do regulamento')
+        }
+    </script>
+</body>
+</html>
+
+

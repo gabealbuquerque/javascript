@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex03</title>
+</head>
+<body>
+    <!--  3) Elabore o código de um programa que leia as notas de três avaliações de um aluno. A
+primeira avaliação tem peso 2, a segunda tem peso 3 e a terceira, peso 5. Calcule a média
+do aluno e exiba-a na tela. Se a média do aluno for maior ou igual a 6.0, também exiba
+&#39;aprovado&#39;; caso contrário, exiba &#39;reprovado&#39;. 
+-->
+    <script>
+        var nota1 = prompt('Digite a 1ª nota: ');
+        var nota2 = prompt('Digite a 2ª nota: ');
+        var nota3 = prompt('Digite a 3ª nota: ');
+        let media = ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / 10;
+        alert(`A media foi de ${media}`);
+        if (media >= 6) {
+            alert('APROVADO');
+        }
+        else {
+            alert('REPROVADO');
+        }
+    </script>
+</body>
+</html>
